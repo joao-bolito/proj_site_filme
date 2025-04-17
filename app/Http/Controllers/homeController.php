@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -29,8 +28,6 @@ class homeController extends Controller
         $filmesPopulares = $filmesPopulares->json()['results'];
         $filmesEmCartaz = $filmesEmCartaz->json()['results'];
         $seriesPopulares = $seriesPopulares->json()['results'];
-
-        // dd($seriesPopulares);
 
         return view('home', compact('filmesPopulares', 'filmesEmCartaz', 'seriesPopulares'));
     }

@@ -53,7 +53,12 @@ h1{
 .segunda-parte-header {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+}
+
+.form-pesquisa{
+    display: flex;
+    align-items: center;
 }
 
 .container-pesquisa{
@@ -75,6 +80,15 @@ h1{
     cursor: pointer;
 }
 
+.img-pesquisa{
+    transition: transform 0.3s ease;
+}
+
+.img-pesquisa:hover{
+    transform: scale(1.1);
+    background-color: #999999;
+    border-radius: 15px;
+}
 
 /* ========================= */
 /* Iniciando o slide do home */

@@ -8,8 +8,12 @@
         </div>
         <div class="segunda-parte-header">
             <div class="container-pesquisa">
-                <input type="text" placeholder="Pesquisar">
-                <a href=""><img src="{{asset('img/search-alt-1-svgrepo-com.svg')}}" alt="Imagem de uma lupa para pesquisa"></a>
+                <form action="{{route('pesquisar')}}" method="GET" class="form-pesquisa">
+                    <input type="text" name="pesquisar" placeholder="Pesquisar">
+                    <button type="submit" style="background: none; border: none; padding: 0;">
+                        <img class="img-pesquisa" src="{{asset('img/search-alt-1-svgrepo-com.svg')}}" alt="Imagem de uma lupa para pesquisa">
+                    </button>
+                </form>
             </div>
             <div class="container-login">
                 <a href=""><img src="{{asset('img/profile-user-account-svgrepo-com.svg')}}" alt="Imagem para login"></a>
