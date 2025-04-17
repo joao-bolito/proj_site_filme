@@ -11,8 +11,6 @@ class pesquisarFilmesController extends Controller
         try{
             $filme = $request->input('pesquisar');
 
-            // dd($filme);
-
             if(empty($filme)){
                 return view('pesquisar')->with('error', 'Digite o nome de um filme para pesquisar');
             }
