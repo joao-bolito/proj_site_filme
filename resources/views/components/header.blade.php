@@ -2,7 +2,7 @@
 <header>
     <div class="container-header">
         <div class="links-conteudo-header">
-            <li><a href="">Início</a></li>
+            <li><a href="{{route('home')}}">Início</a></li>
             <li><a href="">Filmes</a></li>
             <li><a href="">Séries</a></li>
         </div>
