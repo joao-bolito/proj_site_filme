@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{asset('style.css')}}">
+<script defer src="{{asset('script.js')}}"></script>
 <header>
     <div class="container-header">
         <div class="links-conteudo-header">
@@ -16,8 +17,11 @@
                 </form>
             </div>
             <div class="container-login">
-                <a href=""><img src="{{asset('img/profile-user-account-svgrepo-com.svg')}}" alt="Imagem para login"></a>
+                <a href=""><img id="login" src="{{asset('img/profile-user-account-svgrepo-com.svg')}}" alt="Imagem para login"></a>
             </div>
         </div>
+    </div>
+    <div class="opcao-btn-login">
+        <a href="">Faça Login para acessar sua conta</a>
     </div>
 </header>

@@ -80,6 +80,16 @@ h1{
     cursor: pointer;
 }
 
+.container-login img{
+    transition: transform 0.3s ease;
+}
+
+.container-login img:hover{
+    transform: scale(1.1);
+    background-color: #999999;
+    border-radius: 15px;
+}
+
 .img-pesquisa{
     transition: transform 0.3s ease;
 }
@@ -87,7 +97,21 @@ h1{
 .img-pesquisa:hover{
     transform: scale(1.1);
     background-color: #999999;
-    border-radius: 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.opcao-btn-login a{
+    display: none;
+    color: var(--header-font-color);
+    text-decoration: none;
+    position: absolute;
+    background-color: #999999;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    left: 81%;
+    top: 2%;
 }
 
 /* ========================= */
