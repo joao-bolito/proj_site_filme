@@ -11,6 +11,15 @@
 </head>
 <body>
     <x-header></x-header>
+
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
+    @if(session('error'))
+        <div class="alert alert-danger">{{ session('error') }}</div>
+    @endif
+
     <section class="swiper popular">
         <div class="swiper-wrapper swiper-wrapper-popular">
             @foreach ($filmesPopulares as $filmePopular)

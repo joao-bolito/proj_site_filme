@@ -1,5 +1,8 @@
+// =====================
+//   Botão de cadastro
+// =====================
 const login = document.getElementById('login');
-const opcaoLogar = document.querySelector('.opcao-btn-login a');
+const opcaoLogar = document.querySelector('.opcao-btn-login button');
 
 login.addEventListener('click', function(event){
     event.preventDefault();

@@ -101,7 +101,7 @@ h1{
 }
 
 
-.opcao-btn-login a{
+.opcao-btn-login button{
     display: none;
     color: var(--header-font-color);
     text-decoration: none;
@@ -253,4 +253,33 @@ h1{
 
 .swiper-slide-series img:hover{
     transform: scale(1.05);
+}
+
+
+/* ======================= */
+/* Estilizando modal login */
+/* ======================= */
+
+.modal-header h1{
+    color: black;
+}
+
+.possui-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.possui-cadastro button{
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+}
+
+
+.possui-cadastro button:hover{
+    background-color: #0b5ed7;
 }
